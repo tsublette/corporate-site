@@ -69,7 +69,7 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Because you don't have 5.7 quintillion years to wait for an answer..."
+		title = "Because you don't have lifetimes to wait for an answer..."
 		subtitle = "3DSIM"
 		buttonText = "Tell me more"
 
