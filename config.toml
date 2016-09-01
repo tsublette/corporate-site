@@ -32,9 +32,9 @@ googleAnalytics = ""
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "your@email.com"
+	email = "ryan.walls@3dsim.com"
 
-    # Link custom assets relative to /statuc
+    # Link custom assets relative to /static
     custom_css = []
     custom_js  = []
 
@@ -69,7 +69,7 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Because you don't have lifetimes to wait for an answer..."
+		title = "Because you don't have 5.7×10<sup>18</sup> years to wait for an answer..."
 		subtitle = "3DSIM"
 		buttonText = "Tell me more"
 
@@ -83,19 +83,19 @@ googleAnalytics = ""
         [[params.services.row]]
 
             [[params.services.row.list]]
-                icon = "fa-shopping-cart"
-                title = "E-Commerce"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                icon = "fa-rocket"
+                title = "Fast"
+                description = "Using a combination of a multi-scale mesh that dynamically moves with the energy source and novel mathematical formulations."
 
             [[params.services.row.list]]
-                icon = "fa-laptop"
-                title = "Responsive Design"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                icon = "fa-cloud"
+                title = "Cloud Based"
+                description = "Providing no hassle updates with nothing to install on your local machine."
 
             [[params.services.row.list]]
                 icon = "fa-lock"
-                title = "Web"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                title = "Secure"
+                description = "SSL encryption on every page combined with industry best practices."
 
 	# Portfolio section
 	[params.portfolio]
@@ -105,20 +105,20 @@ googleAnalytics = ""
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Products"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = "Powerful webapps delivered directly to you in the cloud"
 
 		[params.portfolio.modal]
-            client = "Client"
+            client = "Link"
             date = "Date"
             category = "Category"
-            buttonText = "Close project"
+            buttonText = "Close"
 
 
     # About section
 	[params.about]
         enable = true
 		title = "About"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = "Our journey from idea to product"
 		endpoint = "Be part<br>of our<br>story!"
 
 		# The events will be listed from the top to the bottom.
@@ -153,39 +153,34 @@ googleAnalytics = ""
 	[params.team]
         enable = true
 		title = "Our amazing team"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+		subtitle = "Changing the simulation world from a little ski town."
+    # TODO core beliefs here
+		description = ""
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
-			img = "1.jpg"
-			name = "Kay Garland"
-			position = "Lead Designer"
+			img = "brentstucker.jpg"
+			name = "Brent Stucker"
+			position = "CEO and Co-Founder"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
+				["fa-linkedin", "https://www.linkedin.com/in/brent-stucker-040530b"]
 			]
 
 		[[params.team.members]]
-			img = "2.jpg"
-			name = "Larry Parker"
-			position = "Lead Marketer"
+			img = "deepankarpal.jpg"
+			name = "Deepankar Pal"
+			position = "Chief Scientist and Co-Founder"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
+				["fa-linkedin", "https://www.linkedin.com/in/deepankar-pal-03310212"]
 			]
 
 		[[params.team.members]]
-			img = "3.jpg"
-			name = "Diana Pertersen"
-			position = "Lead Developer"
+			img = "nachiketpatil.jpg"
+			name = "Nachiket Patil"
+			position = "Inventor and Co-Founder"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
+				["fa-linkedin", "https://www.linkedin.com/in/patilnachiket"]
 			]
 
 	# Client section
@@ -214,8 +209,8 @@ googleAnalytics = ""
 	# Contact section
 	[params.contact]
         enable = true
-		title = "Contact us"
-		subtitle  = "Lorem ipsum dolor sit amet consectetur."
+		title = "Get simulating today"
+		subtitle  = "Fill out this form and someone from our onboarding team will contact you"
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
@@ -241,17 +236,17 @@ googleAnalytics = ""
         enable = true
 		copyright = "All rights reserved - 2016"
 
-		[[params.footer.social]]
-			icon = "fa-twitter"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-facebook"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-linkedin"
-			link = "#"
+		# [[params.footer.social]]
+		# 	icon = "fa-twitter"
+		# 	link = "#"
+    #
+		# [[params.footer.social]]
+		# 	icon = "fa-facebook"
+		# 	link = "#"
+    #
+		# [[params.footer.social]]
+		# 	icon = "fa-linkedin"
+		# 	link = "#"
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
