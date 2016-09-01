@@ -61,7 +61,7 @@ googleAnalytics = ""
     # postpended links
     [[menu.postpend]]
         url = "http://3dsim.github.io"
-        name = "Engineering Blog"
+        name = "Software Blog"
         weight = 10
 
 
@@ -69,7 +69,13 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Because you don't have 5.7×10<sup>18</sup> years to wait for an answer..."
+    # Additive Manufacturing Insight = Additive Manufacturing Success
+    # Facing Challenges in Additive Manufacturing?
+    # Build Failures?
+    # Insight = Success
+    # Do you need more insight?
+		title = "Challenges in Additive Manufacturing?<br/>Insight = Success"
+
 		subtitle = "3DSIM"
 		buttonText = "Tell me more"
 
@@ -209,7 +215,7 @@ googleAnalytics = ""
 	# Contact section
 	[params.contact]
         enable = true
-		title = "Get simulating today"
+		title = "Start simulating today"
 		subtitle  = "Fill out this form and someone from our onboarding team will contact you"
 		buttonText = "Send message"
 
