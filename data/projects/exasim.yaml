@@ -1,0 +1,10 @@
+modalID: 1
+title: EXASIM
+subtitle: Support Optimization
+date: 2016-09-01
+img: exasimlogo.png
+preview: exasimlogo.png
+client: EXASIM
+clientLink: "#"
+category: Simulation
+description: It is estimated that tens of thousands of dollars are wasted per machine per year in unnecessary support material costs, post manufacturing labor part finishing, and material lost due to failed builds. Our simulation tools predict residual stress and strain data to identify the minimum amount of support needed for your part.
