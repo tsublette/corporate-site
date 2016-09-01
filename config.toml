@@ -63,6 +63,10 @@ googleAnalytics = ""
         url = "http://3dsim.github.io"
         name = "Software Blog"
         weight = 10
+    [[menu.postpend]]
+        url = "https://www.youtube.com/channel/UCvaLAp2CWIPqNUFs4nfa9ew"
+        name = "Research"
+        weight = 5
 
 
 	# Hero section
@@ -74,8 +78,7 @@ googleAnalytics = ""
     # Build Failures?
     # Insight = Success
     # Do you need more insight?
-		title = "Challenges in Additive Manufacturing?<br/>Insight = Success"
-
+		title = "Challenges in Additive Manufacturing?<br/>Simulation Insight = Production Success"
 		subtitle = "3DSIM"
 		buttonText = "Tell me more"
 
@@ -84,14 +87,31 @@ googleAnalytics = ""
 	[params.services]
     enable = true
 		title = "Features"
-		subtitle = "Based upon years of work by the world’s leading researchers in Additive Manufacturing, we’re building software solutions to provide unprecedented insight into metal 3D printing processes - all at speeds unreachable by current simulation tools."
+		subtitle = "Providing unprecedented insight into metal 3D printing processes."
 
         [[params.services.row]]
 
             [[params.services.row.list]]
                 icon = "fa-rocket"
                 title = "Fast"
-                description = "Using a combination of a multi-scale mesh that dynamically moves with the energy source and novel mathematical formulations."
+                description = "Innovative meshing techniques and novel mathematical formulations implemented in highly efficient software."
+
+            [[params.services.row.list]]
+                icon = "fa-object-group"
+                title = "Multi-Physics"
+                description = "Solvers that..."
+
+            [[params.services.row.list]]
+                icon = "fa-thumbs-up"
+                title = "User Friendly"
+                description = "TODO ..."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-cubes"
+                title = "Scalable"
+                description = "TODO ..."
 
             [[params.services.row.list]]
                 icon = "fa-cloud"
@@ -111,7 +131,7 @@ googleAnalytics = ""
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Products"
-		subtitle = "Powerful webapps delivered directly to you in the cloud"
+		subtitle = "Powerful simulation tools delivered directly to you in the cloud"
 
 		[params.portfolio.modal]
             client = "Link"
@@ -132,27 +152,34 @@ googleAnalytics = ""
 		# Replace them with your own.
 		[[params.about.events]]
 			img = "1.jpg"
-			date = "2009-2011"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			date = "2009-2013"
+			title = "Research Beginnings"
+			description = "Intensive period of academic research, tackling the problems related to simulating a full scale additive manufacturing process."
 
 		[[params.about.events]]
 			img = "2.jpg"
-			date = "March 2011"
-			title = "An Agency is Born"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			date = "2014"
+			title = "3DSIM is Born"
+			description = "Critical mass of research success resulted in the formation of 3DSIM.  First funding round completed, initial team assembled, and the work building the world's fastest simulation framework began."
 
 		[[params.about.events]]
 			img = "3.jpg"
-			date = "December 2012"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			date = "January 2015"
+			title = "Accelerated Growth"
+			description = "Relocated the company to Park City, UT to access the large Salt Lake City technical talent pool."
 
 		[[params.about.events]]
 			img = "4.jpg"
-			date = "July 2014"
-			title = "Phase Two Expansion"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			date = "2015-2016"
+			title = "Building Our Vision"
+			description = "Grew the team by 4x.  Completed structural mechanics and thermal solvers.  Built cloud delivery framework.  Engaged alpha users."
+
+    [[params.about.events]]
+			img = "4.jpg"
+			date = "September 2016"
+			title = "exaSIM Beta Available!"
+			description = "The first easy to use cloud-based simulation tool for predicting stress and distortion in metal laser sintering."
+
 
 
 	# Team section
