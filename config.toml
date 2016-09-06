@@ -78,9 +78,10 @@ googleAnalytics = ""
     # Build Failures?
     # Insight = Success
     # Do you need more insight?
-		title = "Challenges in Additive Manufacturing?<br/>Simulation Insight = Production Success"
-		subtitle = "3DSIM"
-		buttonText = "Tell me more"
+		title = "Challenges in<br/>Additive Manufacturing?"
+		# subtitle = "Insight <i class=\"fa fa-caret-right\"></i> Success"
+		subtitle = "Simulation Insight <i class=\"fa fa-caret-right\"></i> Production Success"
+		buttonText = "Learn more"
 
 
 	# Services section
@@ -99,19 +100,19 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-object-group"
                 title = "Multi-Physics"
-                description = "Solvers that..."
+                description = "Multi-scale solvers tuned to the physics of additive manufacturing."
 
             [[params.services.row.list]]
                 icon = "fa-thumbs-up"
                 title = "User Friendly"
-                description = "TODO ..."
+                description = "Modern user interface providing access to cutting edge simulation power without the need for specialized training."
 
         [[params.services.row]]
 
             [[params.services.row.list]]
                 icon = "fa-cubes"
                 title = "Scalable"
-                description = "TODO ..."
+                description = "Leveraging the power of Amazon Web Services to provide nearly unlimited scalability for even the largest customer."
 
             [[params.services.row.list]]
                 icon = "fa-cloud"
@@ -160,7 +161,7 @@ googleAnalytics = ""
 			img = "2.jpg"
 			date = "2014"
 			title = "3DSIM is Born"
-			description = "Critical mass of research success resulted in the formation of 3DSIM.  First funding round completed, initial team assembled, and the work building the world's fastest simulation framework began."
+			description = "Critical mass of research success resulted in the formation of 3DSIM.  First funding round completed, initial team assembled, and work building the world's fastest simulation framework began."
 
 		[[params.about.events]]
 			img = "3.jpg"
@@ -218,7 +219,7 @@ googleAnalytics = ""
 
 	# Client section
     [params.clients_list]
-        enable = true
+        enable = false
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
@@ -242,8 +243,8 @@ googleAnalytics = ""
 	# Contact section
 	[params.contact]
         enable = true
-		title = "Start simulating today"
-		subtitle  = "Fill out this form and someone from our onboarding team will contact you"
+		title = "Still have questions?"
+		subtitle  = "Schedule a demo, request more information, or connect with our team."
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
