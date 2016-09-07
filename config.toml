@@ -158,27 +158,27 @@ googleAnalytics = ""
 			description = "Intensive period of academic research, tackling the problems related to simulating a full scale additive manufacturing process."
 
 		[[params.about.events]]
-			img = "2.jpg"
+			img = "baby_skis_small.jpg"
 			date = "2014"
 			title = "3DSIM is Born"
 			description = "Critical mass of research success resulted in the formation of 3DSIM.  First funding round completed, initial team assembled, and work building the world's fastest simulation framework began."
 
 		[[params.about.events]]
-			img = "3.jpg"
+			img = "techcenter_small.jpg"
 			date = "January 2015"
 			title = "Accelerated Growth"
 			description = "Relocated the company to Park City, UT to access the large Salt Lake City technical talent pool."
 
 		[[params.about.events]]
-			img = "4.jpg"
+			img = "team_small.png"
 			date = "2015-2016"
 			title = "Building Our Vision"
 			description = "Grew the team by 4x.  Completed structural mechanics and thermal solvers.  Built cloud delivery framework.  Engaged alpha users."
 
     [[params.about.events]]
-			img = "4.jpg"
+			img = "launch_small.jpg"
 			date = "September 2016"
-			title = "exaSIM Beta Available!"
+			title = "exaSIM Beta Launch!"
 			description = "The first easy to use cloud-based simulation tool for predicting stress and distortion in metal laser sintering."
 
 
