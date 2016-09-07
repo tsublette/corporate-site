@@ -8,4 +8,20 @@ $(document).ready(function() {
 
 		fixedContentPos: false
 	});
+  $("#typed").typed({
+      stringsElement: $('#typed-strings'),
+      contentType: 'html',
+      callback: function() {
+        $("#typed").siblings('.typed-cursor').remove();
+        typeNextString();
+      }
+  });
 });
+
+function typeNextString() {
+  $("#typed-next").typed({
+      stringsElement: $('#typed-next-strings'),
+      contentType: 'html',
+      startDelay: 500
+  });
+}
