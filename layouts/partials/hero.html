@@ -3,9 +3,16 @@
     <div class="container">
         <div class="intro-text">
           <div class="intro-text-blur">
-            <div class="intro-lead-in">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</div>
-            <div class="intro-heading">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</div>
-            <a href="#services" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . | markdownify }}{{ end }}</a>
+            <div id="typed-strings" hidden="true" class="intro-lead-in"><p>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</p></div>
+            <div id="typed" class="intro-lead-in" style="display:inline"></div>
+            <br/>
+            <br/>
+            <div id="typed-next-strings" hidden="true" class="intro-heading"><p>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</p></div>
+            <div id="typed-next" class="intro-heading" style="display:inline"></div>
+            <div class="bottom">
+              <a class="popup-youtube btn btn-xl" href="{{ .Site.Params.hero.videoLink }}">{{ with.Site.Params.hero.videoButtonText }}{{ . | markdownify }}{{ end }}</a>
+              <a href="#services" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . | markdownify }}{{ end }}</a>
+            </div>
           </div>
         </div>
     </div>
