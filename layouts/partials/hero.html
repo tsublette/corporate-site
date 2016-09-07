@@ -5,6 +5,7 @@
           <div class="intro-text-blur">
             <div class="intro-lead-in">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</div>
             <div class="intro-heading">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</div>
+            <a class="popup-youtube btn btn-xl" href="{{ .Site.Params.hero.videoLink }}">{{ with.Site.Params.hero.videoButtonText }}{{ . | markdownify }}{{ end }}</a>
             <a href="#services" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . | markdownify }}{{ end }}</a>
           </div>
         </div>

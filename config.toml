@@ -35,8 +35,8 @@ googleAnalytics = ""
 	email = "ryan.walls@3dsim.com"
 
     # Link custom assets relative to /static
-    custom_css = []
-    custom_js  = []
+    custom_css = ["css/magnific-popup.css"]
+    custom_js  = ["js/jquery.magnific-popup.min.js","js/site.js"]
 
 
 	# Navigation
@@ -82,6 +82,8 @@ googleAnalytics = ""
 		# subtitle = "Insight <i class=\"fa fa-caret-right\"></i> Success"
 		subtitle = "Simulation Insight <i class=\"fa fa-caret-right\"></i> Production Success"
 		buttonText = "Learn more"
+    videoLink = "https://www.youtube.com/watch?v=pKk_krg2DC4"
+    videoButtonText = "<i class=\"fa fa-play-circle\"></i> Play Video"
 
 
 	# Services section
