@@ -1,6 +1,7 @@
 name = "exasim"
 csv = "data/exasim.csv"
 logo = "portfolio/exasimlogo.png"
+active = true
 
 [[tiers]]
 planIdRoot = "exasim-basic-"

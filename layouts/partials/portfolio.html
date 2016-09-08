@@ -10,7 +10,7 @@
         <div class="row">
           {{ range .Site.Data.products }}
           <div class="col-md-6 col-sm-6 col-xs-12 portfolio-item">
-              <a href="{{ .Site.BaseURL }}product/{{ .name }}" class="portfolio-link">
+              <a href="{{ if eq .active true }}{{ .Site.BaseURL }}product/{{ .name }}{{ end }}" class="portfolio-link">  
                   <div class="portfolio-hover">
                       <div class="portfolio-hover-content">
                           <i class="fa fa-plus fa-3x"></i>
