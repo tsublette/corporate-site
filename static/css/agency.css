@@ -1011,8 +1011,9 @@ table.feature-comparison-table td {
   max-width: 200px;
 }
 
-div.pricing-tier {
+div .pricing-tier {
   border-right:solid black 0.1px;
+  min-height: 600px;
 }
 
 div .pricing-tier:last-child {
@@ -1045,6 +1046,17 @@ div .price {
 
 .pricing-tier .btn-xl {
   background: rgba(189,27,33,1);
+}
+
+.pricing-tier sub {
+  font-size: 14px;
+}
+
+.pricing-tier .fine-print {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .faq {

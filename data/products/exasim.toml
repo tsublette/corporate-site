@@ -3,8 +3,11 @@ csv = "data/exasim.csv"
 logo = "portfolio/exasimlogo.png"
 
 [[tiers]]
-name = "exaSIM"
-monthlyPrice = "$750"
+planIdRoot = "exasim-basic-"
+name = "exaSIM BASIC"
+monthlyPrice = "75000"
+yearlyPrice = "750000"
+buttonText = "Subscribe"
 highlights = [
   "Uniform assumed strain"
 ]
@@ -15,11 +18,17 @@ features = [
   "Community forum",
   "Email support"
 ]
+finePrintItems = [
+  "* 2 months free with prepaid annual subscription"
+]
 
 
 [[tiers]]
-name = "exaSIM Advanced"
-monthlyPrice = "$1,100"
+planIdRoot = "exasim-advanced-"
+name = "exaSIM ADVANCED"
+monthlyPrice = "110000"
+yearlyPrice = "1100000"
+buttonText = "Subscribe"
 highlights = [
   "Uniform assumed strain and scan pattern based strain simulations"
 ]
@@ -29,13 +38,18 @@ features = [
   "More S3 storage",
   "More user logins"
 ]
+finePrintItems = [
+  "* 2 months free with prepaid annual subscription"
+]
 
 [[tiers]]
+planIdRoot = "exasim-complete-"
 name = "exaSIM Complete"
-monthlyPrice = "$1,600"
+monthlyPrice = "160000"
+yearlyPrice = "1600000"
+buttonText = "Subscribe"
 highlights = [
   "Thermal strain, uniform assumed strain, and scan pattern based strain simulations",
-
 ]
 features = [
   "All features of Advanced package",
@@ -43,10 +57,15 @@ features = [
   "More S3 storage",
   "More user logins"
 ]
+finePrintItems = [
+  "* 2 months free with prepaid annual subscription"
+]
 
 [[tiers]]
 name = "exaSIM Enterprise"
+monthlyPriceAlternate = "Custom"
 features = []
+buttonText = "Contact us"
 
 
 [[faqs]]
