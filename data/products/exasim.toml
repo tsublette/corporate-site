@@ -1,0 +1,58 @@
+name = "exasim"
+csv = "data/exasim.csv"
+logo = "portfolio/exasimlogo.png"
+
+[[tiers]]
+name = "exaSIM"
+monthlyPrice = "$750"
+highlights = [
+  "Uniform assumed strain"
+]
+features = [
+  "Uniform assumed strain simulations",
+  "Custom materials",
+  "Realtime simulation progress",
+  "Community forum",
+  "Email support"
+]
+
+
+[[tiers]]
+name = "exaSIM Advanced"
+monthlyPrice = "$1,100"
+highlights = [
+  "Uniform assumed strain and scan pattern based strain simulations"
+]
+features = [
+  "All features of base package",
+  "Scan pattern dependent strain simulations",
+  "More S3 storage",
+  "More user logins"
+]
+
+[[tiers]]
+name = "exaSIM Complete"
+monthlyPrice = "$1,600"
+highlights = [
+  "Thermal strain, uniform assumed strain, and scan pattern based strain simulations",
+
+]
+features = [
+  "All features of Advanced package",
+  "Thermal strain simulations",
+  "More S3 storage",
+  "More user logins"
+]
+
+[[tiers]]
+name = "exaSIM Enterprise"
+features = []
+
+
+[[faqs]]
+question = "Can I change plans at any time?"
+answer = "You may change tiers or subscription levels at any time. All subscriptions are prepaid for the month, so any increases will be prorated for the remaining days in the month. After initial signup, you can make changes by contacting support@3dsim.com."
+
+[[faqs]]
+question = "Is credit card the only billing option?"
+answer = "For month-to-month plans, 3DSIM offers credit card billing only. For annual prepaid plans, we can provide for alternative forms of payment."

@@ -15,7 +15,7 @@ html {
 }
 
 .text-muted {
-    color: #777;
+    color: #8E9092;
 }
 
 .text-primary {
@@ -792,6 +792,10 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+section#overview {
+    padding: 60px 0;
+}
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -993,4 +997,61 @@ body {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+table .feature-comparison-table {
+  border-collapse: collapse;
+}
+
+table.feature-comparison-table th {
+  background-color: #8E9092;
+}
+
+table.feature-comparison-table td {
+  max-width: 200px;
+}
+
+div.pricing-tier {
+  border-right:solid black 0.1px;
+}
+
+div .pricing-tier:last-child {
+  border-right:none
+}
+
+div .price {
+  font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: black;
+}
+
+
+.pricing-tier .feature {
+  text-align: left;
+}
+
+.pricing-tier .feature-list {
+  margin-top: 50px;
+}
+
+.pricing-tier .highlight-list {
+  min-height: 120px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.pricing-tier .btn-xl {
+  background: rgba(189,27,33,1);
+}
+
+.faq {
+    padding: 20px;
+}
+
+.faq .question {
+  font-weight: 600;
+  font-size: 20px;
 }
