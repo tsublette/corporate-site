@@ -3,6 +3,27 @@ csv = "data/exasim.csv"
 logo = "portfolio/exasimlogo.png"
 active = true
 
+[[overviewSections]]
+title = "What is it?"
+text = "exaSIM Beta is a cloud-based Additive Manufacturing (AM) simulation tool that provides metal laser sintering users with rapid insight into residual stress and distortion predictions. These predictions are used to accelerate production through informed support generation and trend analysis; reducing trial and error iterations for successful builds."
+img = "img/products/exasim/whatisit.png"
+
+[[overviewSections]]
+title = "How does it work?"
+text = "exaSIM Beta utilizes advanced computational solvers to predict residual stress and distortion in a layer-by-layer fashion. A user supplied STL file is automatically meshed for analysis. A strain pattern is calculated and used to simulate how residual stress and distortion evolve as the part is being built. The maximum stress components are stored and used for support generation. Upon completion, exaSIM users are provided with stress contours and distortion for their geometry as well as multiple support options."
+img = "img/products/exasim/supportgeneration.png"
+
+[[overviewSections]]
+title = "Support Generation"
+text = "exaSIM outputs three types of support structures. Thin wall supports are single-scan-width walls that are distributed beneath each downward-facing surface that is below the user-specified minimum angle. Uniform supports are placed based upon geometric considerations only.   Stress-based thin wall supports are distributed such that more walls are placed in regions of higher residual stress and fewer walls in regions of lower residual stress.  Thick wall supports are uniformly spaced supports where the thickness of walls are increased in regions of higher residual stress.  Each of these support types can be output as STL files for any exaSIM simulation."
+img = "img/products/exasim/supportvariations.png"
+
+[[overviewSections]]
+title = "Trend Analysis"
+text = "exaSIM users can select successful part orientations and support strategies by visualizing the effects of their assumptions on distortion and residual stress of as-built parts. Stress and distortion values are delivered to the user using the open source Visualization ToolKit (VTK) file format.  These files can be viewed in many 3rd party visualization tools, including Paraview, a free viewer.  VTK files enable users to see the differences between the original undeformed geometry and the final deformed geometry.  Color maps can also be used for viewing distortion trends, final residual stress, and the maximum stress components throughout the build. These visualizations enable users to select the orientation and strategy which best meets their part design intent.  By reducing maximum part stresses and distortion, users can reduce their likelihood for blade crash failures."
+img = "img/products/exasim/trends.png"
+
+
 [[tiers]]
 planIdRoot = "exasim-basic-"
 name = "exaSIM BASIC"
@@ -65,7 +86,16 @@ finePrintItems = [
 [[tiers]]
 name = "exaSIM Enterprise"
 monthlyPriceAlternate = "Custom"
-features = []
+highlights = [
+  "Enterprise scale, priority support, and personalized training",
+]
+features = [
+  "Additional concurrent simulations",
+  "More than 5 user logins",
+  "3TB+ S3 storage",
+  "Dedicated technical success manager"
+]
+
 buttonText = "Contact us"
 
 

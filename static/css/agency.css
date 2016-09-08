@@ -1067,3 +1067,20 @@ div .price {
   font-weight: 600;
   font-size: 20px;
 }
+
+
+.overview-section {
+    margin-top: 50px;
+}
+
+.overview-section h3 {
+  color: rgba(189,27,33,1);
+}
+
+.overview-section img {
+  margin-top: 30px;
+  width: 100%;
+  -moz-box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+  -webkit-box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+  box-shadow: 2px 4px 6px rgba(0,0,0,.5);
+}
