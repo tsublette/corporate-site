@@ -20,14 +20,14 @@ $(document).ready(function() {
     console.log("Terms have changed");
     if ($(this).val() === "accept" && typeof $(this).parents('form').find("input[name=planFrequency]:checked").val() != 'undefined') {
       console.log("Accepted terms");
-      $(this).parents('form').find("button").show();
+      $(this).parents('form').find("button").prop('disabled', false);
     }
   });
   $("input[name=planFrequency]").change(function(){
     console.log("Frequency has changed");
     console.log($(this).parents('form').find("input[name=terms]:checked").val());
     if ($(this).parents('form').find("input[name=terms]:checked").val() === "accept") {
-      $(this).parents('form').find("button").show();
+      $(this).parents('form').find("button").prop('disabled', false);
     }
   });
 
