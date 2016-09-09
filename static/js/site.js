@@ -30,22 +30,6 @@ $(document).ready(function() {
       $(this).parents('form').find("button").show();
     }
   });
-  $(".subscription-modal").find("form").submit(function(e){
-    console.log("Form submitted");
-    var form = $(this);
-    $.ajax({
-         url   : form.attr('action'),
-         type  : form.attr('method'),
-         data  : form.serialize(), // data to be submitted
-         success: function(response){
-            alert(response); // do what you like with the response
-         },
-         error: function (response) {
-           alert("error:" + response);
-        }
-    });
-    return false;
-  });
 
   $(".subscription-modal").find("button").on('click', function(e) {
     var frequency = $(this).parents('form').find("input[name=planFrequency]:checked").val()
@@ -93,12 +77,11 @@ function submitSubscription(form) {
        data  : form.serialize(), // data to be submitted
        success: function(response){
          console.log("subscription successful");
-          // alert(response); // do what you like with the response
+         window.location = "/corporate-site/message/successful-subscription";
        },
        error: function (response) {
          console.log("subscription error");
-         console.log(response);
-        //  alert("error:" + response);
+         window.location = "/corporate-site/message/error";
       }
   });
   return false;
