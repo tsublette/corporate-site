@@ -188,7 +188,7 @@ googleAnalytics = ""
 	# Team section
 	[params.team]
         enable = true
-		title = "Our amazing team"
+		title = "Our founders"
 		subtitle = "Changing the simulation world from a little ski town."
     # TODO core beliefs here
 		description = ""
