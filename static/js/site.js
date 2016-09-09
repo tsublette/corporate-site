@@ -16,35 +16,30 @@ $(document).ready(function() {
         typeNextString();
       }
   });
-  $("input[type='checkbox']").change(function(){
-    var numCheckedCheckboxesOnForm = $(this).parents('form').children("input[type='checkbox']:checked").length;
-    var numCheckboxesOnForm = $(this).parents('form').children("input[type='checkbox']").length;
-    if (numCheckedCheckboxesOnForm === numCheckboxesOnForm) {
-       console.log("all checkboxes checked");
-       if ($(this).siblings("input[name=planFrequency]:checked").val() === "monthly") {
-         $(this).siblings("#monthlyPayButton").show();
-         $(this).siblings("#yearlyPayButton").hide();
-       } else {
-         $(this).siblings("#monthlyPayButton").hide();
-         $(this).siblings("#yearlyPayButton").show();
-       }
-    } else {
-      console.log("some checkboxes unchecked");
-      $(this).siblings("#monthlyPayButton").hide();
-      $(this).siblings("#yearlyPayButton").hide();
+  $("input[name=terms]").change(function(){
+    console.log("Terms have changed");
+    if ($(this).val() === "accept") {
+      console.log("Accepted terms");
+      if ($(this).parents('form').find("input[name=planFrequency]:checked").val() === "monthly") {
+        $(this).parents('form').find("#monthlyPayButton").show();
+        $(this).parents('form').find("#yearlyPayButton").hide();
+      } else {
+        $(this).parents('form').find("#monthlyPayButton").hide();
+        $(this).parents('form').find("#yearlyPayButton").show();
+      }
     }
   });
-  $("input[type='radio']").change(function(){
-    var numCheckedCheckboxesOnForm = $(this).parents('form').children("input[type='checkbox']:checked").length;
-    var numCheckboxesOnForm = $(this).parents('form').children("input[type='checkbox']").length;
-    if (numCheckedCheckboxesOnForm === numCheckboxesOnForm) {
-       if ($(this).val() === "monthly") {
-         $(this).siblings("#monthlyPayButton").show();
-         $(this).siblings("#yearlyPayButton").hide();
-       } else {
-         $(this).siblings("#monthlyPayButton").hide();
-         $(this).siblings("#yearlyPayButton").show();
-       }
+  $("input[name=planFrequency]").change(function(){
+    console.log("Frequency has changed");
+    console.log($(this).parents('form').find("input[name=terms]:checked").val());
+    if ($(this).parents('form').find("input[name=terms]:checked").val() === "accept") {
+      if ($(this).val() === "monthly") {
+        $(this).parents('form').find("#monthlyPayButton").show();
+        $(this).parents('form').find("#yearlyPayButton").hide();
+      } else {
+        $(this).parents('form').find("#monthlyPayButton").hide();
+        $(this).parents('form').find("#yearlyPayButton").show();
+      }
     }
   });
 
