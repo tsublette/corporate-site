@@ -10,14 +10,21 @@
         <div class="row">
           {{ range .Site.Data.products }}
           <div class="col-md-6 col-sm-6 col-xs-12 portfolio-item">
-              <a href="{{ if eq .active true }}{{ .Site.BaseURL }}product/{{ .name }}{{ end }}" class="portfolio-link">  
+              <a href="{{ if eq .active true }}{{ .Site.BaseURL }}product/{{ .name }}{{ end }}" class="portfolio-link">
+                  {{ if .active }}
                   <div class="portfolio-hover">
                       <div class="portfolio-hover-content">
                           <i class="fa fa-plus fa-3x"></i>
                       </div>
                   </div>
+                  {{ end }}
                   <img src="img/{{ .logo }}" class="img-responsive" alt="">
               </a>
+              {{ if .active }}
+              <p class="text-center text-muted" style="margin-top:30px">Click logo for more information</p>
+              {{ else }}
+              <p class="text-center text-muted" style="margin-top:30px">Coming soon!</p>
+              {{ end }}
           </div>
           {{ end }}
         </div>
