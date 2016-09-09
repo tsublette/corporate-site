@@ -5,7 +5,7 @@ title = "Creating the world’s fastest framework for solving multi-physics/mult
 copyright = "All rights reserved - 2016"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-83914032-1"
 
 [params]
 
