@@ -1,19 +1,17 @@
-Features,exaSIM Standard,exaSIM Advanced,exaSIM Complete,exaSIM enterprise
-Uniform Assumed Strain Feature,x,x,x,x
+FEATURE LIST,exaSIM BASIC,exaSIM ADVANCED,exaSIM COMPLETE,exaSIM ENTERPRISE
+Uniform Assumed Strain,x,x,x,x
 Scan Pattern Dependent Strain,,x,x,x
-Full Thermal Strain,,,x,x
-"Simultaneous Simulations (each additional concurrent simulation, $700/month, $7000/yr)",1,1,1,custom
-User logins,1,up to 3,up to 5,custom
+Thermal Strain,,,x,x
+Concurrent simulations* ,1,1,1,customizable
+User logins,1,up to 3,up to 5,customizable
 Community forum,x,x,x,x
-Email Support,x,x,x,x
-Priority Email Support,,,,x
-Phone support,,,,x
-Onsite training,,,,x
+Email support,x,x,x,x
 User group participation,x,x,x,x
 Text message alerting for simulations,x,x,x,x
-Dedicated technical success manager,,,,x
-Realtime simulation progress,x,x,x,x
+Real-time simulation progress,x,x,x,x
 Cloud based access,x,x,x,x
-Allocated S3 storage limit,2 TB,2 TB,3 TB,custom
-Custom materials,x,x,x,x
-Thermophysical Material Database,n/a,n/a,1,custom
+Allocated S3 storage limit,1 TB,2 TB,3 TB,customizable
+User-customized material assumptions ,x,x,x,x
+Thermophysical material database**,n/a,n/a,1,customizable
+Priority email support,,,,x
+Phone support,,,,x
