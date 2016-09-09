@@ -79,11 +79,11 @@ function submitSubscription(form) {
        data  : form.serialize(), // data to be submitted
        success: function(response){
          console.log("subscription successful");
-         window.location = "/corporate-site/message/successful-subscription";
+         window.location = "/message/successful-subscription";
        },
        error: function (response) {
          console.log("subscription error");
-         window.location = "/corporate-site/message/error";
+         window.location = "/message/error";
       }
   });
   return false;
