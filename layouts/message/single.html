@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+      {{ partial "head.html" . }}
+  </head>
+  <body id="page-top" class="index">
+    {{ partial "simplenav.html" . }}
+    <section id="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 id="title">{{ .Title }}</h1>
+            <div>
+              <article class="content">
+                 {{ .Content }}
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "js.html" . }}
+  </body>
+</html>

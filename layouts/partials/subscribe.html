@@ -1,55 +1,65 @@
 {{ "<!-- Subscribe Modals -->" | safeHTML }}
 <div class="portfolio-modal modal fade" id="subscription-{{ .planIdRoot }}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <div>{{ .name }} Beta</div>
-                        <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/prod/subscriptions" method="post">
-                          <input type="text" name="planIdRoot" value="{{ .planIdRoot }}" hidden="true"></input>
-                          <input type="text" name="company">Company</input>
-                          <input type="checkbox" required>Agree to all terms and conditions</input>
-                          <input type="checkbox" required>Agree to recurring payments</input>
-
-                          <input type="radio" name="planFrequency" checked="checked" value="yearly"/>Yearly {{ .yearlyPrice }}
-                          <input type="radio" name="planFrequency" value="monthly"/>Monthly {{ .monthlyPrice }}
-                          <div>Access credentials will be sent to you within 24 hours of payment processing</div>
-                          <div id="yearlyPayButton" hidden="true">
-                            <script
-                              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                              data-key="pk_live_YexY7m4B9GZY6mUTo4ieciCe"
-                              data-amount="{{ .yearlyPrice }}"
-                              data-name="3DSIM LLC"
-                              data-description="{{ .name }} Yearly Subscription"
-                              data-image=""
-                              data-locale="auto"
-                              data-label="Pay Yearly">
-
-                            </script>
-                          </div>
-                          <div id="monthlyPayButton" hidden="true">
-                            <script
-                              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                              data-key="pk_live_YexY7m4B9GZY6mUTo4ieciCe"
-                              data-amount="{{ .monthlyPrice }}"
-                              data-name="3DSIM LLC"
-                              data-description="{{ .name }} Monthly Subscription"
-                              data-image=""
-                              data-locale="auto"
-                              data-label="Pay Monthly">
-                            </script>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="container bg-light-gray">
+      <div class="row">
+        <div class="modal-body col-lg-12 subscription-modal">
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <h3>{{ .name }} Beta</h3>
+              <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/prod/subscriptions" method="post">
+                <input type="text" name="planIdRoot" value="{{ .planIdRoot }}" hidden="true"></input>
+                <input type="text" name="monthlyPrice" value="{{ .monthlyPrice }}" hidden="true"></input>
+                <input type="text" name="yearlyPrice" value="{{ .yearlyPrice }}" hidden="true"></input>
+                <input type="hidden" name="stripeToken"/>
+                <input type="hidden" name="stripeEmail"/>
+                <div class="form-group">
+                  <label>Company</label>
+                  <input type="text" class="form-control" placeholder="Company Name" name="company"></input>
+                </div>
+                <div class="form-group">
+                  <label>Name <small>(Administrator)</small></label>
+                  <input type="text" class="form-control" placeholder="Name" name="name"></input>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="Email" name="email"></input>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="yearly"/>Yearly ${{substr .yearlyPrice 0 -2}}
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="monthly"/>Monthly ${{substr .monthlyPrice 0 -2}}
+                  </label>
+                </div>
+                <object style="height:600px;width:100%;" data="/corporate-site/pdf/terms-and-conditions.pdf"></object>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="accept"/>I accept
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="decline" data-dismiss="modal"/>I decline
+                  </label>
+                </div>
+                <button type="button" disabled="true">Pay with card</button>
+
+                <div style="margin-top:20px">Access credentials will be sent to you within 24 hours of payment processing.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

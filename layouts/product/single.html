@@ -63,7 +63,9 @@
                 {{ end }}
               </div>
               <a href="{{ $tier.buttonLink }}" class="btn btn-xl" {{if $tier.available }}data-toggle="modal"{{ end }}>{{ $tier.buttonText }}</a>
-              {{ partial "subscribe.html" $tier }}
+              {{ if $tier.available }}
+                {{ partial "subscribe.html" $tier }}
+              {{ end }}
               <div class="feature-list">
                 {{ range $_, $feature := $tier.features }}
                   <div class="feature"><i class="fa fa-check"></i> {{ $feature }}</div>
@@ -140,6 +142,8 @@
         </div>
       </div>
     </section>
+    {{ partial "contact.html" . }}
+    {{ partial "footer.html" . }}
     {{ partial "js.html" . }}
   </body>
 </html>
