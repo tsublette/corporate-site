@@ -33,6 +33,7 @@ $(document).ready(function() {
 
   $(".subscription-modal").find("button").on('click', function(e) {
     var frequency = $(this).parents('form').find("input[name=planFrequency]:checked").val()
+    var email = $(this).parents('form').find("input[name=email]").val()
     var name = $(this).parents('.subscription-modal').find("h3").text();
     var amount = $(this).parents('form').find("input[name=" + frequency+ "Price]").val()
 
@@ -56,7 +57,8 @@ $(document).ready(function() {
     handler.open({
       name: '3DSIM LLC',
       description: name + " " + frequency,
-      amount: amount
+      amount: amount,
+      email: email
     });
     e.preventDefault();
   });
