@@ -15,6 +15,10 @@
               <h3>{{ .name }} Beta</h3>
               <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/dev/subscriptions" method="post">
                 <input type="text" name="planIdRoot" value="{{ .planIdRoot }}" hidden="true"></input>
+                <input type="text" name="monthlyPrice" value="{{ .monthlyPrice }}" hidden="true"></input>
+                <input type="text" name="yearlyPrice" value="{{ .yearlyPrice }}" hidden="true"></input>
+                <input type="hidden" name="stripeToken"/>
+                <input type="hidden" name="stripeEmail"/>
                 <div class="form-group">
                   <label>Company</label>
                   <input type="text" class="form-control" placeholder="Company Name" name="company"></input>
@@ -48,30 +52,7 @@
                     <input type="radio" name="terms" value="decline" data-dismiss="modal"/>I decline
                   </label>
                 </div>
-                <div id="yearlyPayButton" hidden="true">
-                  <script
-                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="pk_test_Hgj5DuHk5eDVtkrfTLrAHNOr"
-                  data-amount="{{ .yearlyPrice }}"
-                  data-name="3DSIM LLC"
-                  data-description="{{ .name }} Yearly Subscription"
-                  data-image=""
-                  data-locale="auto"
-                  data-label="Pay Yearly">
-                  </script>
-                </div>
-                <div id="monthlyPayButton" hidden="true">
-                  <script
-                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="pk_test_Hgj5DuHk5eDVtkrfTLrAHNOr"
-                  data-amount="{{ .monthlyPrice }}"
-                  data-name="3DSIM LLC"
-                  data-description="{{ .name }} Monthly Subscription"
-                  data-image=""
-                  data-locale="auto"
-                  data-label="Pay Monthly">
-                  </script>
-                </div>
+                <button type="button" hidden="true">Pay with card</button>
 
                 <div>Access credentials will be sent to you within 24 hours of payment processing.</div>
               </form>
