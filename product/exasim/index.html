@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  <head>
+      <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="3DSIM">
+<meta name="generator" content="Hugo 0.16" />
+<title>Creating the world’s fastest framework for solving multi-physics/multi-scale simulation problems.</title>
+<!-- Stylesheets -->
+<link href="https://3dsim.github.io/corporate-site/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://3dsim.github.io/corporate-site/css/agency.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://3dsim.github.io/corporate-site/css/magnific-popup.css">
+
+
+<!-- Custom Fonts -->
+<link href="https://3dsim.github.io/corporate-site/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body id="page-top" class="index">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-left" href="https://3dsim.github.io/corporate-site/"><img src="https://3dsim.github.io/corporate-site/img/logo.png" style="height:50px;border:0;"/></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="#overview">Overview</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#pricing">Pricing</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#feature-comparison">Feature Comparison</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#faq">FAQ</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://login.3dsim.com">Login</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+    <section id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="https://3dsim.github.io/corporate-site/img/portfolio/exasimlogo.png" height="50px"></img>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Overview</h2>
+                <h3 class="section-subheading text-muted">Primary features of exaSIM&#x2122;</h3>
+            </div>
+        </div>
+        
+        <div class="row overview-section">
+            
+              <div class="col-lg-7">
+                  <h3>What is it?</h3>
+                  <div>exaSIM&#x2122; Beta software is a cloud-based Additive Manufacturing (AM) simulation tool that provides metal laser sintering users with rapid insight into residual stress and distortion predictions. These predictions are used to accelerate production through informed support generation and trend analysis; reducing trial and error iterations for successful builds.</div>
+              </div>
+              <div class="col-lg-5">
+                <img src="https://3dsim.github.io/corporate-site/img/products/exasim/whatisit.png"></img>
+              </div>
+            
+            
+        </div>
+        
+        <div class="row overview-section">
+            
+            
+              <div class="col-lg-5">
+                <img src="https://3dsim.github.io/corporate-site/img/products/exasim/supportgeneration.png"></img>
+              </div>
+              <div class="col-lg-7">
+                  <h3>How does it work?</h3>
+                  <div>exaSIM&#x2122; Beta utilizes advanced computational solvers to predict residual stress and distortion in a layer-by-layer fashion. A user supplied STL file is automatically meshed for analysis. A strain pattern is calculated and used to simulate how residual stress and distortion evolve as the part is being built. The maximum stress components are stored and used for support generation. Upon completion, exaSIM users are provided with stress contours and distortion for their geometry as well as multiple support options.</div>
+              </div>
+            
+        </div>
+        
+        <div class="row overview-section">
+            
+              <div class="col-lg-7">
+                  <h3>Support Generation</h3>
+                  <div>exaSIM&#x2122; outputs three types of support structures. Thin wall supports are single-scan-width walls that are distributed beneath each downward-facing surface that is below the user-specified minimum angle. Uniform supports are placed based upon geometric considerations only.   Stress-based thin wall supports are distributed such that more walls are placed in regions of higher residual stress and fewer walls in regions of lower residual stress.  Thick wall supports are uniformly spaced supports where the thickness of walls are increased in regions of higher residual stress.  Each of these support types can be output as STL files for any exaSIM simulation.</div>
+              </div>
+              <div class="col-lg-5">
+                <img src="https://3dsim.github.io/corporate-site/img/products/exasim/supportvariations.png"></img>
+              </div>
+            
+            
+        </div>
+        
+        <div class="row overview-section">
+            
+            
+              <div class="col-lg-5">
+                <img src="https://3dsim.github.io/corporate-site/img/products/exasim/trends.png"></img>
+              </div>
+              <div class="col-lg-7">
+                  <h3>Trend Analysis</h3>
+                  <div>exaSIM&#x2122; users can select successful part orientations and support strategies by visualizing the effects of their assumptions on distortion and residual stress of as-built parts. Stress and distortion values are delivered to the user using the open source Visualization ToolKit (VTK) file format.  These files can be viewed in many 3rd party visualization tools, including Paraview, a free viewer.  VTK files enable users to see the differences between the original undeformed geometry and the final deformed geometry.  Color maps can also be used for viewing distortion trends, final residual stress, and the maximum stress components throughout the build. These visualizations enable users to select the orientation and strategy which best meets their part design intent.  By reducing maximum part stresses and distortion, users can reduce their likelihood for blade crash failures.</div>
+              </div>
+            
+        </div>
+        
+      </div>
+    </section>
+    <section id="pricing" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Pricing</h2>
+                <h3 class="section-subheading text-muted">Flexible package and payment options available</h3>
+            </div>
+        </div>
+        <div class="row">
+            
+            
+            <div class="col-lg-3 text-center pricing-tier">
+              <h3 class="text-muted">exaSIM BASIC</h3>
+              <div class="price">$750/<sub>month<sup>*</sup></sub></div>
+              <div class="highlight-list">
+                
+                  <div class="highlight">Uniform assumed strain</div>
+                
+              </div>
+              <a href="#subscription-exasim-basic-" class="btn btn-xl" data-toggle="modal">Subscribe</a>
+              
+                <!-- Subscribe Modals -->
+<div class="portfolio-modal modal fade" id="subscription-exasim-basic-" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container bg-light-gray">
+      <div class="row">
+        <div class="modal-body col-lg-12 subscription-modal">
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <h3>exaSIM BASIC Beta</h3>
+              <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/prod/subscriptions" method="post">
+                <input type="text" name="planIdRoot" value="exasim-basic-" hidden="true"></input>
+                <input type="text" name="monthlyPrice" value="75000" hidden="true"></input>
+                <input type="text" name="yearlyPrice" value="750000" hidden="true"></input>
+                <input type="hidden" name="stripeToken"/>
+                <input type="hidden" name="stripeEmail"/>
+                <div class="form-group">
+                  <label>Company</label>
+                  <input type="text" class="form-control" placeholder="Company Name" name="company"></input>
+                </div>
+                <div class="form-group">
+                  <label>Name <small>(Administrator)</small></label>
+                  <input type="text" class="form-control" placeholder="Name" name="name"></input>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="Email" name="email"></input>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="yearly"/>Yearly $7500
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="monthly"/>Monthly $750
+                  </label>
+                </div>
+                <object style="height:600px;width:100%;" data="/pdf/terms-and-conditions.pdf"></object>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="accept"/>I accept
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="decline" data-dismiss="modal"/>I decline
+                  </label>
+                </div>
+                <button type="button" disabled="true">Pay with card</button>
+
+                <div style="margin-top:20px">Access credentials will be sent to you within 24 hours of payment processing.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+              <div class="feature-list">
+                
+                  <div class="feature"><i class="fa fa-check"></i> Uniform assumed strain simulations</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> User-customized material assumptions</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Realtime simulation progress</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Community forum</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Email support</div>
+                
+              </div>
+              <div class="fine-print">
+                
+                <div>* 2 months free with prepaid annual subscription</div>
+                
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-3 text-center pricing-tier">
+              <h3 class="text-muted">exaSIM ADVANCED</h3>
+              <div class="price">$1100/<sub>month<sup>*</sup></sub></div>
+              <div class="highlight-list">
+                
+                  <div class="highlight">Uniform assumed strain and scan pattern based strain simulations</div>
+                
+              </div>
+              <a href="#subscription-exasim-advanced-" class="btn btn-xl" data-toggle="modal">Subscribe</a>
+              
+                <!-- Subscribe Modals -->
+<div class="portfolio-modal modal fade" id="subscription-exasim-advanced-" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container bg-light-gray">
+      <div class="row">
+        <div class="modal-body col-lg-12 subscription-modal">
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <h3>exaSIM ADVANCED Beta</h3>
+              <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/prod/subscriptions" method="post">
+                <input type="text" name="planIdRoot" value="exasim-advanced-" hidden="true"></input>
+                <input type="text" name="monthlyPrice" value="110000" hidden="true"></input>
+                <input type="text" name="yearlyPrice" value="1100000" hidden="true"></input>
+                <input type="hidden" name="stripeToken"/>
+                <input type="hidden" name="stripeEmail"/>
+                <div class="form-group">
+                  <label>Company</label>
+                  <input type="text" class="form-control" placeholder="Company Name" name="company"></input>
+                </div>
+                <div class="form-group">
+                  <label>Name <small>(Administrator)</small></label>
+                  <input type="text" class="form-control" placeholder="Name" name="name"></input>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="Email" name="email"></input>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="yearly"/>Yearly $11000
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="planFrequency" value="monthly"/>Monthly $1100
+                  </label>
+                </div>
+                <object style="height:600px;width:100%;" data="/pdf/terms-and-conditions.pdf"></object>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="accept"/>I accept
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="terms" value="decline" data-dismiss="modal"/>I decline
+                  </label>
+                </div>
+                <button type="button" disabled="true">Pay with card</button>
+
+                <div style="margin-top:20px">Access credentials will be sent to you within 24 hours of payment processing.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+              <div class="feature-list">
+                
+                  <div class="feature"><i class="fa fa-check"></i> All features of base package</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Scan pattern dependent strain simulations</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> More S3 storage</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> More user logins</div>
+                
+              </div>
+              <div class="fine-print">
+                
+                <div>* 2 months free with prepaid annual subscription</div>
+                
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-3 text-center pricing-tier">
+              <h3 class="text-muted">exaSIM Complete</h3>
+              <div class="price">$1600/<sub>month<sup>*</sup></sub></div>
+              <div class="highlight-list">
+                
+                  <div class="highlight">Thermal strain, uniform assumed strain, and scan pattern based strain simulations</div>
+                
+              </div>
+              <a href="#pricing" class="btn btn-xl" >Coming Soon</a>
+              
+              <div class="feature-list">
+                
+                  <div class="feature"><i class="fa fa-check"></i> All features of Advanced package</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Thermal strain simulations</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> More S3 storage</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> More user logins</div>
+                
+              </div>
+              <div class="fine-print">
+                
+                <div>* 2 months free with prepaid annual subscription</div>
+                
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-3 text-center pricing-tier">
+              <h3 class="text-muted">exaSIM Enterprise</h3>
+              <div class="price">Custom</div>
+              <div class="highlight-list">
+                
+                  <div class="highlight">Enterprise scale, priority support, and personalized training</div>
+                
+              </div>
+              <a href="mailto:info@3dsim.com?subject=Enterprise%20ExaSIM" class="btn btn-xl" >Contact us</a>
+              
+              <div class="feature-list">
+                
+                  <div class="feature"><i class="fa fa-check"></i> Additional concurrent simulations</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> More than 5 user logins</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> 3TB&#43; S3 storage</div>
+                
+                  <div class="feature"><i class="fa fa-check"></i> Dedicated technical success manager</div>
+                
+              </div>
+              <div class="fine-print">
+                
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+    <section id="feature-comparison">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Feature Comparison</h2>
+                <h3 class="section-subheading text-muted">Please contact us if none of the packages offered match your requirements</h3>
+            </div>
+        </div>
+        <div class="row">
+            
+               
+           <table class="table table-bordered feature-comparison-table">
+             
+             <thead>
+               <tr>
+                 
+                 <th>FEATURE LIST</th>
+                 
+                 <th>exaSIM BASIC</th>
+                 
+                 <th>exaSIM ADVANCED</th>
+                 
+                 <th>exaSIM COMPLETE</th>
+                 
+                 <th>exaSIM ENTERPRISE</th>
+                 
+               </tr>
+            </thead>
+             <tbody>
+               
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Uniform Assumed Strain</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Scan Pattern Dependent Strain</td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Thermal Strain</td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Concurrent simulations* </td>
+                    
+                    
+                    <td style="text-align:center;">1</td>
+                    
+                    
+                    <td style="text-align:center;">1</td>
+                    
+                    
+                    <td style="text-align:center;">1</td>
+                    
+                    
+                    <td style="text-align:center;">customizable</td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >User logins</td>
+                    
+                    
+                    <td style="text-align:center;">1</td>
+                    
+                    
+                    <td style="text-align:center;">up to 3</td>
+                    
+                    
+                    <td style="text-align:center;">up to 5</td>
+                    
+                    
+                    <td style="text-align:center;">customizable</td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Community forum</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Email support</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >User group participation</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Text message alerting for simulations</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Real-time simulation progress</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Cloud based access</td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Allocated S3 storage limit</td>
+                    
+                    
+                    <td style="text-align:center;">1 TB</td>
+                    
+                    
+                    <td style="text-align:center;">2 TB</td>
+                    
+                    
+                    <td style="text-align:center;">3 TB</td>
+                    
+                    
+                    <td style="text-align:center;">customizable</td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >User-customized material assumptions </td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Thermophysical material database**</td>
+                    
+                    
+                    <td style="text-align:center;">n/a</td>
+                    
+                    
+                    <td style="text-align:center;">n/a</td>
+                    
+                    
+                    <td style="text-align:center;">1</td>
+                    
+                    
+                    <td style="text-align:center;">customizable</td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Priority email support</td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+                 
+                 <tr>
+                    
+                    
+                    <td >Phone support</td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"></td>
+                    
+                    
+                    <td style="text-align:center;"><i class="fa fa-check"></i></td>
+                    
+                 </tr>
+                 
+               
+             </tbody>
+           </table>
+           <div>* Concurrent simulation limit can be increased for $700/month or $7,000/year per instance</div>
+           <div>** Thermophysical material databases can be added for $200/month or $2,000/year per material</div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <h3 class="section-subheading text-muted">A few questions that you might have...</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              
+              <div class="faq">
+                <div class="question">Can I change plans at any time?</div>
+                <div class="answer">You may change tiers or subscription levels at any time. All subscriptions are prepaid for the month, so any increases will be prorated for the remaining days in the month. After initial signup, you can make changes by contacting support@3dsim.com.</div>
+              </div>
+              
+              <div class="faq">
+                <div class="question">Is credit card the only billing option?</div>
+                <div class="answer">For month-to-month plans, 3DSIM offers credit card billing only. For annual prepaid plans, we can provide for alternative forms of payment.</div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Still have questions?</h2>
+                <h3 class="section-subheading text-muted">Schedule a demo, request more information, or connect with our team.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form  action="//formspree.io/ryan.walls@3dsim.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" name="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" name="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Your Phone *" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message *" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Send message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer section -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">All rights reserved - 2016</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    
+                    <li><a href="#">Privacy Policy</a></li>
+                    
+                    <li><a href="#">Terms of Use</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery -->
+<script src="https://3dsim.github.io/corporate-site/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://3dsim.github.io/corporate-site/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://3dsim.github.io/corporate-site/js/classie.js"></script>
+<script src="https://3dsim.github.io/corporate-site/js/cbpAnimatedHeader.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="https://3dsim.github.io/corporate-site/js/jqBootstrapValidation.js"></script>
+<script src="https://3dsim.github.io/corporate-site/js/contact_me.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="https://3dsim.github.io/corporate-site/js/agency.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83914032-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+    <script src="https://3dsim.github.io/corporate-site/js/typed.min.js"></script>
+
+    <script src="https://3dsim.github.io/corporate-site/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://3dsim.github.io/corporate-site/js/site.js"></script>
+
+
+  </body>
+</html>
