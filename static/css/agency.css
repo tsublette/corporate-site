@@ -1088,3 +1088,16 @@ div .price {
 .subscription-modal form {
   text-align: left;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    @font-face {
+        font-family:'FontAwesome'; src: url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+        }
+}
+
+.download-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 200%;
+}

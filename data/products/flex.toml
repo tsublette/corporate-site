@@ -1,3 +1,5 @@
 name = "flex"
 logo = "portfolio/flexlogo.png"
 active = false
+downloadInfoText = "Download FLEX flyer"
+downloadInfoURL = "pdf/FLEX_Beta_Launch_Flyer.pdf"

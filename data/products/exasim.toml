@@ -3,6 +3,8 @@ csv = "data/exasim.csv"
 logo = "portfolio/exasimlogo.png"
 active = true
 overviewSubheading = "Primary features of exaSIM&#x2122;"
+downloadInfoText = "Download exaSIM Flyer"
+downloadInfoURL = "pdf/exaSIM_Beta_Launch_Flyer.pdf"
 
 [[overviewSections]]
 title = "What is it?"
@@ -11,7 +13,7 @@ img = "img/products/exasim/whatisit.png"
 
 [[overviewSections]]
 title = "How does it work?"
-text = "exaSIM&#x2122; Beta utilizes advanced computational solvers to predict residual stress and distortion in a layer-by-layer fashion. A user supplied STL file is automatically meshed for analysis. A strain pattern is calculated and used to simulate how residual stress and distortion evolve as the part is being built. The maximum stress components are stored and used for support generation. Upon completion, exaSIM users are provided with stress contours and distortion for their geometry as well as multiple support options."
+text = "exaSIM&#x2122; Beta utilizes advanced computational solvers to predict residual stress and distortion in a layer-by-layer fashion. A user supplied STL file is automatically meshed for analysis. A strain pattern is calculated and used to simulate how residual stress and distortion evolve as the part is being built. The maximum stress components are stored and used for support generation. Upon completion, exaSIM users are provided with stress contours and distortion for their geometry as well as multiple support options. <br><br>Our initial Beta release offers two operational modes for predicting distortion and residual stress: 1) Uniform Assumed Strain and 2) Scan Pattern Dependent Strain. The Uniform Assumed Strain mode provides the fastest approximation by utilizing a uniform isotropic strain assumption. The Scan Pattern Dependent Strain mode offers a higher fidelity modeling solution by taking into account scan pattern based anisotropy. During our Beta program we will introduce a 3rd simulation mode, Thermal Strain, to provide the highest degree of accuracy. All modes can be used to generate supports and conduct trend analysis. "
 img = "img/products/exasim/supportgeneration.png"
 
 [[overviewSections]]

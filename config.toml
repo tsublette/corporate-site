@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://3dsim.github.io/corporate-site/"
 languageCode = "en-us"
-title = "Creating the world’s fastest framework for solving multi-physics/multi-scale simulation problems."
+title = "Additive Manufacturing Simulation"
 copyright = "All rights reserved - 2016"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics

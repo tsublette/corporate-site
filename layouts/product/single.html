@@ -41,6 +41,9 @@
             {{ end }}
         </div>
         {{ end }}
+        <div class="col-lg-12 row download-info">
+          <a href="{{ .Site.BaseURL }}{{ $productData.downloadInfoURL }}">{{ $productData.downloadInfoText }}</a>
+        </div>
       </div>
     </section>
     <section id="pricing" class="bg-light-gray">
