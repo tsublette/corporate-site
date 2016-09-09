@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
               <h3>{{ .name }} Beta</h3>
-              <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/dev/subscriptions" method="post">
+              <form action="https://sxgfj6r7rb.execute-api.us-west-2.amazonaws.com/prod/subscriptions" method="post">
                 <input type="text" name="planIdRoot" value="{{ .planIdRoot }}" hidden="true"></input>
                 <input type="text" name="monthlyPrice" value="{{ .monthlyPrice }}" hidden="true"></input>
                 <input type="text" name="yearlyPrice" value="{{ .yearlyPrice }}" hidden="true"></input>

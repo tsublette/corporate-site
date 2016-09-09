@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     var button = this;
     var handler = StripeCheckout.configure({
-      key: 'pk_test_Hgj5DuHk5eDVtkrfTLrAHNOr',
+      key: 'pk_live_YexY7m4B9GZY6mUTo4ieciCe',
       locale: 'auto',
       token: function(token) {
         // You can access the token ID with `token.id`.
