@@ -1,0 +1,17 @@
+FEATURE LIST,exaSIM BASIC,exaSIM ADVANCED,exaSIM COMPLETE,exaSIM ENTERPRISE
+Uniform Assumed Strain,x,x,x,x
+Scan Pattern Dependent Strain,,x,x,x
+Thermal Strain,,,x,x
+Concurrent simulations* ,1,1,1,customizable
+User logins,1,up to 3,up to 5,customizable
+Community forum,x,x,x,x
+Email support,x,x,x,x
+User group participation,x,x,x,x
+Text message alerting for simulations,x,x,x,x
+Real-time simulation progress,x,x,x,x
+Cloud based access,x,x,x,x
+Allocated S3 storage limit,1 TB,2 TB,3 TB,customizable
+User-customized material assumptions ,x,x,x,x
+Thermophysical material database**,n/a,n/a,1,customizable
+Priority email support,,,,x
+Phone support,,,,x

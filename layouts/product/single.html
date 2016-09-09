@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ $productData := (index $.Site.Data.products $.Title)}}
+  <head>
+      {{ partial "head.html" . }}
+  </head>
+  <body id="page-top" class="index">
+    {{ partial "productnav.html" . }}
+    <section id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="{{ .Site.BaseURL }}{{ .Params.logo }}" height="50px"></img>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Overview</h2>
+                <h3 class="section-subheading text-muted">Primary features of exaSIM</h3>
+            </div>
+        </div>
+        {{ range $i, $overviewSection := $productData.overviewSections }}
+        <div class="row overview-section">
+            {{ if eq (mod $i 2) 0 }}
+              <div class="col-lg-7">
+                  <h3>{{ $overviewSection.title }}</h3>
+                  <div>{{ $overviewSection.text }}</div>
+              </div>
+              <div class="col-lg-5">
+                <img src="{{ $.Site.BaseURL }}{{ $overviewSection.img }}"></img>
+              </div>
+            {{ end }}
+            {{ if eq (mod $i 2) 1 }}
+              <div class="col-lg-5">
+                <img src="{{ $.Site.BaseURL }}{{ $overviewSection.img }}"></img>
+              </div>
+              <div class="col-lg-7">
+                  <h3>{{ $overviewSection.title }}</h3>
+                  <div>{{ $overviewSection.text }}</div>
+              </div>
+            {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    <section id="pricing" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Pricing</h2>
+                <h3 class="section-subheading text-muted">Flexible package and payment options available</h3>
+            </div>
+        </div>
+        <div class="row">
+            {{ range $i, $tier := $productData.tiers}}
+            {{ $colWidth := (div 12 (len $productData.tiers)) }}
+            <div class="col-lg-{{ $colWidth }} text-center pricing-tier">
+              <h3 class="text-muted">{{ $tier.name }}</h3>
+              <div class="price">{{ if ne $tier.monthlyPrice nil }}${{substr $tier.monthlyPrice 0 -2}}/<sub>month<sup>*</sup></sub>{{ else }}{{ $tier.monthlyPriceAlternate }}{{ end }}</div>
+              <div class="highlight-list">
+                {{ range $_, $highlight := $tier.highlights }}
+                  <div class="highlight">{{ $highlight }}</div>
+                {{ end }}
+              </div>
+              {{ if ne $tier.buttonText nil}}
+              <a href="#subscription-{{ $tier.planIdRoot }}" class="btn btn-xl" data-toggle="modal">{{ $tier.buttonText }}</a>
+              {{ end }}
+              {{ partial "subscribe.html" $tier }}
+              <div class="feature-list">
+                {{ range $_, $feature := $tier.features }}
+                  <div class="feature"><i class="fa fa-check"></i> {{ $feature }}</div>
+                {{ end }}
+              </div>
+              <div class="fine-print">
+                {{ range $_, $finePrint := $tier.finePrintItems }}
+                <div>{{ $finePrint }}</div>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+        </div>
+      </div>
+    </section>
+    <section id="feature-comparison">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Feature Comparison</h2>
+                <h3 class="section-subheading text-muted">Please contact us if none of the packages offered match your requirements</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <article id="content">
+               {{ .Content }}
+             </article> -->
+               <!-- {{ $data := (index $.Site.Data.products $.Title)}}
+               {{ $data.csv }} -->
+           <table class="table table-bordered feature-comparison-table">
+             {{ $csvData := getCSV "," $productData.csv}}
+             <thead>
+               <tr>
+                 {{ range $_, $header := (index $csvData 0)}}
+                 <th>{{ $header }}</th>
+                 {{ end }}
+               </tr>
+            </thead>
+             <tbody>
+               {{ range $i, $r := $csvData }}
+                 {{ if ne $i 0 }}
+                 <tr>
+                    {{ range $j, $value := $r}}
+                    <!-- TODO use css style sheet and http://stackoverflow.com/a/15675170/411229 to style first child td element -->
+                    <td {{ if ne $j 0 }}style="text-align:center;"{{ end }}>{{ if eq $value "x" }}<i class="fa fa-check"></i>{{ else }}{{ $value }}{{ end }}</td>
+                    {{ end }}
+                 </tr>
+                 {{ end }}
+               {{ end }}
+             </tbody>
+           </table>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <h3 class="section-subheading text-muted">A few questions that you might have...</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              {{ range $_, $faq := $data.faqs }}
+              <div class="faq">
+                <div class="question">{{ $faq.question }}</div>
+                <div class="answer">{{ $faq.answer }}</div>
+              </div>
+              {{ end }}
+            </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "js.html" . }}
+  </body>
+</html>
